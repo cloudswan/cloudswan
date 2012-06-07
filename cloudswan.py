@@ -42,7 +42,8 @@ from email.Utils import formatdate
 
 
 define("port", default=8888, help="run on the given port", type=int)
-define("facebook_app_url", default="https://connect.facebook.net/en_US/all.js", help="Facebook Application URL")
+define("facebook_app_url", default="https://connect.facebook.net/en_US/all.js", \
+       help="Facebook Application URL")
 define("facebook_app_id", default="", help="Facebook Application ID")
 define("facebook_app_secret", default="", help="Facebook Application Secret")
 
@@ -53,5 +54,5 @@ define("mysql_password", default="", help="cloudswan database password")
 
 
 class Application(tornado.web.Application):
-    def __init__(self):
-      pass
+  def __init__(self):
+    pass
